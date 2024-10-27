@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:medical_department_name",
+ "creation": "2023-11-16 08:30:46.590877",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hospital_section",
+  "hospital",
+  "medical_department_info_section",
+  "medical_department_name",
+  "column_break_5",
+  "chairmen"
+ ],
+ "fields": [
+  {
+   "fieldname": "hospital_section",
+   "fieldtype": "Section Break",
+   "label": "Hospital"
+  },
+  {
+   "fieldname": "hospital",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Hospital",
+   "options": "Hospitals",
+   "reqd": 1
+  },
+  {
+   "fieldname": "medical_department_info_section",
+   "fieldtype": "Section Break",
+   "label": "Medical Department Info"
+  },
+  {
+   "fieldname": "medical_department_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Medical Department Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chairmen",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Chairmen ",
+   "options": "User",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-27 11:23:42.013464",
+ "modified_by": "Administrator",
+ "module": "Patient Management",
+ "name": "Medical Department",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

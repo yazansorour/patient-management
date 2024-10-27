@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{hospital_suffix}-{hospital_name}-{city}",
+ "creation": "2022-10-15 23:00:08.508258",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hospital_oid",
+  "hospital_suffix",
+  "column_break_3",
+  "moh_id",
+  "hospital_name_section",
+  "hospital_name",
+  "region",
+  "city",
+  "column_break_7",
+  "ara_hospital_name",
+  "claster",
+  "serial_number",
+  "location_section",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "hospital_oid",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hospital OID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "hospital_suffix",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hospital Suffix",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "moh_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "MOH ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hospital_name_section",
+   "fieldtype": "Section Break",
+   "label": "Hospital Name"
+  },
+  {
+   "fieldname": "hospital_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hospital Name ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ara_hospital_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0633\u062a\u0634\u0641\u0649",
+   "reqd": 1
+  },
+  {
+   "fieldname": "claster",
+   "fieldtype": "Select",
+   "label": "Claster",
+   "options": "Claster 1\nClaster 2\nClaster 3"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-27 11:47:14.027928",
+ "modified_by": "Administrator",
+ "module": "Patient Management",
+ "name": "Hospitals",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

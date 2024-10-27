@@ -1,0 +1,236 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{hospital_id}-{department}-{clinic_name}",
+ "creation": "2023-11-16 08:59:37.187684",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hospital_id",
+  "clinic_info_section",
+  "department",
+  "location",
+  "column_break_6",
+  "clinic_name",
+  "clinic_no",
+  "timer_section",
+  "starts_from",
+  "operation_duration",
+  "column_break_11",
+  "to",
+  "breaks_section",
+  "breaks_table",
+  "weekdays_section",
+  "sunday",
+  "column_break_15",
+  "monday",
+  "column_break_17",
+  "tuesday",
+  "column_break_19",
+  "wednesday",
+  "column_break_21",
+  "thursday",
+  "column_break_23",
+  "friday",
+  "column_break_25",
+  "saturday",
+  "holidays_section",
+  "holidays_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "hospital_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hospital ID",
+   "options": "Hospitals",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clinic_info_section",
+   "fieldtype": "Section Break",
+   "label": "Clinic Info"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Medical Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clinic_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Clinic Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clinic_no",
+   "fieldtype": "Data",
+   "label": "Clinic No"
+  },
+  {
+   "fieldname": "timer_section",
+   "fieldtype": "Section Break",
+   "label": "Timer"
+  },
+  {
+   "fieldname": "starts_from",
+   "fieldtype": "Time",
+   "label": "Starts From"
+  },
+  {
+   "fieldname": "operation_duration",
+   "fieldtype": "Time",
+   "label": "Operation Duration"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Time",
+   "label": "To"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "breaks_section",
+   "fieldtype": "Section Break",
+   "label": "Breaks"
+  },
+  {
+   "fieldname": "breaks_table",
+   "fieldtype": "Table",
+   "label": "Breaks Table",
+   "options": "Day Breaks"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "weekdays_section",
+   "fieldtype": "Section Break",
+   "label": "Weekdays"
+  },
+  {
+   "default": "0",
+   "fieldname": "sunday",
+   "fieldtype": "Check",
+   "label": "SUN"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "monday",
+   "fieldtype": "Check",
+   "label": "MON"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "tuesday",
+   "fieldtype": "Check",
+   "label": "TUE"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "wednesday",
+   "fieldtype": "Check",
+   "label": "WED"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "thursday",
+   "fieldtype": "Check",
+   "label": "THU"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "friday",
+   "fieldtype": "Check",
+   "label": "FRI"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "saturday",
+   "fieldtype": "Check",
+   "label": "SAT"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "holidays_section",
+   "fieldtype": "Section Break",
+   "label": "Holidays"
+  },
+  {
+   "fieldname": "holidays_table",
+   "fieldtype": "Table",
+   "label": "Holidays Table",
+   "options": "Days Period"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-27 11:32:55.347457",
+ "modified_by": "Administrator",
+ "module": "Patient Management",
+ "name": "Clinics",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

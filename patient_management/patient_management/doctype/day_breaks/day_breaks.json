@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-07 13:31:48.532892",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "start_break",
+  "end_break"
+ ],
+ "fields": [
+  {
+   "fieldname": "start_break",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Start Break"
+  },
+  {
+   "fieldname": "end_break",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "End Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-27 11:28:36.933979",
+ "modified_by": "Administrator",
+ "module": "Patient Management",
+ "name": "Day Breaks",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

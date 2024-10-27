@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{hospital_code}-{########}",
+ "creation": "2023-02-28 16:17:32.292539",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient_info_section",
+  "hospital",
+  "patient_identifier",
+  "column_break_4",
+  "hospital_code",
+  "patient_name",
+  "section_break_7",
+  "patient_type",
+  "column_break_9",
+  "room_id",
+  "room_no",
+  "visit_info_section",
+  "medical_department",
+  "referring_physicians",
+  "patient_discharged",
+  "column_break_15",
+  "clinic",
+  "referring_physicians_name",
+  "discharged_datetime",
+  "visit_not_actives"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient_info_section",
+   "fieldtype": "Section Break",
+   "label": "Patient Info"
+  },
+  {
+   "fetch_from": "patient_identifier.hospital_id",
+   "fieldname": "hospital",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hospital",
+   "options": "Hospitals",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient_identifier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Patient Identifier",
+   "options": "Patients",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "hospital.hospital_suffix",
+   "fieldname": "hospital_code",
+   "fieldtype": "Data",
+   "label": "Hospital Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "patient_identifier.full_name",
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Patient Type"
+  },
+  {
+   "fieldname": "patient_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Patient Type",
+   "options": "Out Patient\nInpatient\nER",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.patient_type != 'Out Patient';",
+   "fieldname": "room_id",
+   "fieldtype": "Data",
+   "label": "Room ID"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.patient_type != 'Out Patient';",
+   "fetch_from": "room_id.room_no",
+   "fieldname": "room_no",
+   "fieldtype": "Data",
+   "label": "Room No"
+  },
+  {
+   "fieldname": "visit_info_section",
+   "fieldtype": "Section Break",
+   "label": "Visit Info"
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Medical Department",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "referring_physicians",
+   "fieldtype": "Link",
+   "label": "Referring Physicians",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "patient_discharged",
+   "fieldtype": "Check",
+   "label": "Patient Discharged",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clinic",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Clinic",
+   "options": "Clinics"
+  },
+  {
+   "fetch_from": "referring_physicians.full_name",
+   "fieldname": "referring_physicians_name",
+   "fieldtype": "Data",
+   "label": "Referring Physicians Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.patient_discharged == 1;",
+   "fieldname": "discharged_datetime",
+   "fieldtype": "Datetime",
+   "label": "Discharged DateTime"
+  },
+  {
+   "default": "0",
+   "fieldname": "visit_not_actives",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Visit Not Actives  ",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-27 11:47:28.448577",
+ "modified_by": "Administrator",
+ "module": "Patient Management",
+ "name": "Visits",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

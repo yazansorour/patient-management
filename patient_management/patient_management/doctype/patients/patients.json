@@ -1,0 +1,348 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{hospital_suffix}-{mrn}",
+ "creation": "2022-10-15 23:10:30.146561",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hospital_id",
+  "hospital_suffix",
+  "mrn",
+  "petch",
+  "column_break_2",
+  "2nd_patient_id",
+  "national_id",
+  "email",
+  "full_name_section",
+  "first_name",
+  "third_name",
+  "full_name",
+  "column_break_7",
+  "second_name",
+  "last_name",
+  "column_break_10",
+  "ara_2nd_name",
+  "ara_last_name",
+  "column_break_13",
+  "ara_1st_name",
+  "ara_3rd_name",
+  "general_info_section",
+  "gender",
+  "blood_type",
+  "national_id_type",
+  "nationality",
+  "telephone_number",
+  "country",
+  "marital_status",
+  "religion",
+  "column_break_21",
+  "dob",
+  "age",
+  "city",
+  "address",
+  "height",
+  "weight",
+  "patient_oid",
+  "medical_notes",
+  "patient_is_dead",
+  "dead_date_time",
+  "created_at",
+  "updated_at",
+  "ai_assiement_section",
+  "ai_report"
+ ],
+ "fields": [
+  {
+   "fieldname": "hospital_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Hospital ID",
+   "options": "Hospitals"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "hospital_id.hospital_suffix",
+   "fieldname": "hospital_suffix",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Hospital Suffix",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "mrn",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "MRN"
+  },
+  {
+   "fieldname": "petch",
+   "fieldtype": "Button",
+   "label": "Fetch"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 3,
+   "fieldname": "2nd_patient_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "2nd Patient ID"
+  },
+  {
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "National ID"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "full_name_section",
+   "fieldtype": "Section Break",
+   "label": "Patient Name"
+  },
+  {
+   "columns": 4,
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "First Name"
+  },
+  {
+   "columns": 6,
+   "fieldname": "third_name",
+   "fieldtype": "Data",
+   "label": "Third Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 5,
+   "fieldname": "second_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Second Name"
+  },
+  {
+   "columns": 7,
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 9,
+   "fieldname": "ara_2nd_name",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0627\u0633\u0645 \u0627\u0644\u062b\u0627\u0646\u064a"
+  },
+  {
+   "columns": 11,
+   "fieldname": "ara_last_name",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0639\u0627\u0626\u0644\u0629"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 8,
+   "fieldname": "ara_1st_name",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0627\u0633\u0645 \u0627\u0644\u0627\u0648\u0644"
+  },
+  {
+   "columns": 10,
+   "fieldname": "ara_3rd_name",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0627\u0633\u0645 \u0627\u0644\u062b\u0627\u0644\u062b"
+  },
+  {
+   "fieldname": "general_info_section",
+   "fieldtype": "Section Break",
+   "label": "Patient Info"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "blood_type",
+   "fieldtype": "Select",
+   "label": "Blood Type",
+   "options": "A+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+  },
+  {
+   "fieldname": "national_id_type",
+   "fieldtype": "Select",
+   "label": "National ID Type",
+   "options": "\nNational ID\nIqama ID"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "\nSaudi Arabia\nEgypt"
+  },
+  {
+   "fieldname": "telephone_number",
+   "fieldtype": "Data",
+   "label": "Telephone Number"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "Country",
+   "options": "\nSA\nUE\nEG"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status ",
+   "options": "\nMarried\nsingle"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Select",
+   "label": "Religion",
+   "options": "\nIslam\nCrstyan"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Select",
+   "label": "City",
+   "options": "\nJeddah\nMakkah"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Data",
+   "label": "Height"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "patient_oid",
+   "fieldtype": "Data",
+   "label": "Patient OID"
+  },
+  {
+   "fieldname": "medical_notes",
+   "fieldtype": "Data",
+   "label": "Medical Notes"
+  },
+  {
+   "default": "0",
+   "fieldname": "patient_is_dead",
+   "fieldtype": "Check",
+   "label": "Patient is Dead",
+   "read_only": 1
+  },
+  {
+   "default": "2000-05-23 00:00:00",
+   "depends_on": "eval:cur_frm.doc.patient_is_dead == 1;",
+   "fieldname": "dead_date_time",
+   "fieldtype": "Datetime",
+   "label": "Dead Date & Time"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Created At"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Updated At"
+  },
+  {
+   "fieldname": "ai_assiement_section",
+   "fieldtype": "Section Break",
+   "label": "AI Assiement"
+  },
+  {
+   "fieldname": "ai_report",
+   "fieldtype": "Text",
+   "label": "AI Report",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-27 11:47:02.550552",
+ "modified_by": "Administrator",
+ "module": "Patient Management",
+ "name": "Patients",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
