@@ -94,8 +94,9 @@
   {
    "depends_on": "eval:cur_frm.doc.patient_type != 'Out Patient';",
    "fieldname": "room_id",
-   "fieldtype": "Data",
-   "label": "Room ID"
+   "fieldtype": "Link",
+   "label": "Room ID",
+   "options": "Patient Room"
   },
   {
    "depends_on": "eval:cur_frm.doc.patient_type != 'Out Patient';",
@@ -167,7 +168,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-27 11:47:28.448577",
+ "modified": "2024-10-27 12:06:57.455862",
  "modified_by": "Administrator",
  "module": "Patient Management",
  "name": "Visits",

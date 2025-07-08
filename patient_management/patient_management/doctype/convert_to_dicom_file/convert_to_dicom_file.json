@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-04 10:34:43.740211",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "modality",
+  "order",
+  "file",
+  "column_break_omqsp",
+  "patientname",
+  "hospitalid",
+  "accession_number",
+  "file_upload"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patients",
+   "reqd": 1
+  },
+  {
+   "fieldname": "modality",
+   "fieldtype": "Link",
+   "label": "Modality ",
+   "options": "Modalities",
+   "reqd": 1
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "File",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "patient.full_name",
+   "fieldname": "patientname",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "patientName"
+  },
+  {
+   "fieldname": "order",
+   "fieldtype": "Link",
+   "label": "Order",
+   "options": "Radiology Order",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "patient.hospital_id",
+   "fieldname": "hospitalid",
+   "fieldtype": "Data",
+   "label": "HospitalID"
+  },
+  {
+   "fetch_from": "order.accession_number",
+   "fieldname": "accession_number",
+   "fieldtype": "Data",
+   "label": "Accession Number"
+  },
+  {
+   "fieldname": "file_upload",
+   "fieldtype": "HTML",
+   "label": "Folder Upload"
+  },
+  {
+   "fieldname": "column_break_omqsp",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-18 09:55:44.650366",
+ "modified_by": "Administrator",
+ "module": "Patient Management",
+ "name": "Convert To Dicom File",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

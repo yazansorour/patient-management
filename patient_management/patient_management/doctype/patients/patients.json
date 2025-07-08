@@ -51,7 +51,9 @@
   "created_at",
   "updated_at",
   "ai_assiement_section",
-  "ai_report"
+  "ai_report",
+  "jhfgjhfg",
+  "fghfh"
  ],
  "fields": [
   {
@@ -283,8 +285,7 @@
    "default": "0",
    "fieldname": "patient_is_dead",
    "fieldtype": "Check",
-   "label": "Patient is Dead",
-   "read_only": 1
+   "label": "Patient is Dead"
   },
   {
    "default": "2000-05-23 00:00:00",
@@ -315,11 +316,66 @@
    "fieldtype": "Text",
    "label": "AI Report",
    "read_only": 1
+  },
+  {
+   "fieldname": "jhfgjhfg",
+   "fieldtype": "Signature",
+   "label": "jhfgjhfg"
+  },
+  {
+   "fieldname": "fghfh",
+   "fieldtype": "Color",
+   "label": "fghfh"
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-10-27 11:47:02.550552",
+ "links": [
+  {
+   "link_doctype": "PACS Study",
+   "link_fieldname": "patient_identifier"
+  },
+  {
+   "link_doctype": "Radiology Order",
+   "link_fieldname": "patient_identifier"
+  },
+  {
+   "link_doctype": "LAB-Orders",
+   "link_fieldname": "patient_identifier"
+  },
+  {
+   "link_doctype": "Pathology Study",
+   "link_fieldname": "patient_identifier"
+  },
+  {
+   "link_doctype": "Breast Cancer Request",
+   "link_fieldname": "patient_identifier"
+  },
+  {
+   "link_doctype": "Gastrointestinal Cancer Request",
+   "link_fieldname": "patient_identifier"
+  },
+  {
+   "link_doctype": "Gynecological Cancer Request",
+   "link_fieldname": "patient_identifier"
+  },
+  {
+   "link_doctype": "Lymphomas Cancer Request",
+   "link_fieldname": "patient_identifier"
+  },
+  {
+   "link_doctype": "Urological Cancer Request",
+   "link_fieldname": "patient_identifier"
+  },
+  {
+   "link_doctype": "Visits",
+   "link_fieldname": "patient_identifier"
+  },
+  {
+   "link_doctype": "Endo Orders",
+   "link_fieldname": "patient_identifier"
+  }
+ ],
+ "modified": "2025-05-28 17:14:00.479155",
  "modified_by": "Administrator",
  "module": "Patient Management",
  "name": "Patients",
